@@ -103,7 +103,6 @@
 
                 DateTime::make('Send At', 'send_at')
                     ->help('Schedule when to send the email.')
-                    ->rules('after_or_equal:' . Carbon::now()->addSeconds(1), 'before_or_equal:' . Carbon::now()->addDays(7))
             ];
         }
 
