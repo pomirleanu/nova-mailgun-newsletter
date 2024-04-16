@@ -1,0 +1,30 @@
+{
+    "name": "pomirleanu/mailgun-newsletter",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "mailgun/mailgun-php": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pomirleanu\\MailgunNewsletter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pomirleanu\\MailgunNewsletter\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
